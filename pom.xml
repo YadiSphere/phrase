@@ -7,6 +7,7 @@
     <groupId>phrase</groupId>
     <artifactId>phrase</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <developers>
         <developer>
@@ -27,6 +28,7 @@
     </developers>
 
     <repositories>
+
         <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com/bs-jokri/prosebuilder</url>
@@ -35,6 +37,13 @@
             </snapshots>
         </repository>
     </repositories>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/YadiSphere/phrase</url>
+        </repository>
+    </distributionManagement>
 
 
     <properties>
