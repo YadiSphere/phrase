@@ -1,22 +1,29 @@
-name: Run Tests on PR
+name: Java CI mit Maven
 
 on:
   pull_request:
-    branches:
-      - master
+    branches: [ "main" ]
 
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout Code
+        uses: actions/checkout@v5
 
-      - name: Set up JDK 21
+      - name: Setup Java
         uses: actions/setup-java@v5
         with:
           java-version: '21'
           distribution: 'temurin'
+          cache: maven
+          overwrite-settings: false
 
-      - name: Run tests
+      - name: Configure Maven settings
+        uses: s4u/maven-settings-action@v4.0.0
+        with:
+          servers: '[{"id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.GH_PACKAGES_TOKEN }}"},
+        {"id": "prose-builder", "username": "${{ github.actor }}", "password": "${{ secrets.GH_PACKAGES_TOKEN }}"}]'
+      - name: Run Maven Tests
         run: mvn test
