@@ -80,7 +80,7 @@ Tests cover the `get()` method of both `Statement` and `Shout`.
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License — see [LICENSE](https://github.com/YadiSphere/phrase/blob/master/LICENSE.md) for details.
 
 ---
 
