@@ -1,6 +1,10 @@
+*Copyright (c) 2026 Yadigar Camci*
+
+*SPDX-License-Identifier: MIT*
+
+
 ## MIT License
 
-*Copyright (c) 2026 Yadigar Camci*
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
