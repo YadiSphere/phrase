@@ -83,6 +83,12 @@ Tests cover the `get()` method of both `Statement` and `Shout`.
 MIT License — see [LICENSE](https://github.com/YadiSphere/phrase/blob/master/LICENSE.md) for details.
 
 ---
+## Contributing Guidelines
+
+Contribution to this project!B efore submitting a Pull Request please read [Contributing Guidelines](CONTRIBUTING.md).
+
+
+---
 
 ## Author
 
